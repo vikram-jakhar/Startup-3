@@ -1,0 +1,128 @@
+/* small screens */
+@media (min-width: 0px) {
+    /* .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .para1 {
+        color: var(--colors-text, rgba(21, 20, 57, 0.40));
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        width: 470px;
+        padding-top: 32px;
+        text-align: center;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* large screens */
+@media (min-width: 992px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .box1 {
+        display: unset;
+    }
+
+    .para1 {
+        width: 350px;
+        text-align: unset;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .d-none {
+        display: none;
+    }
+    .pr-26 {
+        padding-right: 26px;
+    }
+}
+
+@media (max-width:992px) {
+    label[for="menu-icon"] {
+        width: 30px;
+        height: 22px;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        z-index: 2;
+    }
+
+    label[for="menu-icon"]>span {
+        border-radius: 2px;
+        background-color: red;
+        height: 5px;
+        width: 100%;
+
+    }
+
+    ul.mobile-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        align-items: center;
+        background-color: blue;
+        gap: 10px;
+        top: 0;
+        left: -100%;
+        transition: all 300ms linear;
+        display: none;
+        z-index: 1;
+
+    }
+
+    input[type="checkbox"]:checked+ul {
+        background-color: blue;
+        display: flex;
+        left: 0;
+        z-index: 1;
+
+
+    }
+   
+
+
+}
